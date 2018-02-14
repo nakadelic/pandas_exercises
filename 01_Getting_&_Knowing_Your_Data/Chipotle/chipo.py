@@ -74,7 +74,13 @@ order_grouped = chipo.groupby(by=['order_id']).sum()
 
 print order_grouped.mean().item_price
 
+# How many different items are sold?
 
+# items = chipo.groupby(by=['item_name']).values_count()
+
+items = chipo['item_name'].value_counts().count()
+
+print items
 
 
 
