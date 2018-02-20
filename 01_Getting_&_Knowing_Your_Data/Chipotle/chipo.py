@@ -10,7 +10,7 @@ chipo = pd.read_csv('https://raw.githubusercontent.com/justmarkham/DAT8/master/d
 # print first ten records
 print(chipo.head(10))
 
-
+# .info prints a dataframe of the columns (with names), the number of records in each column, and the data type of each column
 print(chipo.info())
 print('\n')
 
