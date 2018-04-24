@@ -48,6 +48,27 @@ occ.info()
 # print occ.occupation.value_counts()
 
 # EXERCISE 14: Summarize the DataFrame
-print 'sum'
-print occ.sum
+print 'SUMMARY BELOW'
+print occ.describe()
 
+# EXERCISE 15: Summarize all the columns
+print 'The Column Summary will be printed below: \n---Column Summary---'
+
+# look into the function below (the DataFrame.describe)
+col_sum = occ.describe(include = 'all')
+print col_sum
+
+# EXERCISE 16: Summarize only the occupation column
+# The following is wrong --> print occ.groupby('occupation').describe()
+print '\nSUMMARY OF OCCUPATION COLUMN BELOW \n'
+print occ.occupation.describe()
+
+# EXERCISE 17: What is the mean age of users?
+mean = occ.age.mean()
+print 'The mean age of users is: ' + str(mean)
+
+# also consider the round() function to round the value of the 'mean'
+
+# EXERCISE 18: What is the age with least occurrence?
+# What is the difference between Series.value_counts and Series.value_counts() ?
+# What is different when value_counts has parentheses?
