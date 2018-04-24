@@ -28,6 +28,9 @@ col = 'This dataset has ' + c + ' columns'
 
 print(col)
 
+# can also do 
+# print chipo.shape[1] to get the second value from the tuple (which returns (#rows, #cols))
+
 # EXERCISE: what item was ordered the most?
 
 # gets the count of how many times a value occurred in the 'item name' column
